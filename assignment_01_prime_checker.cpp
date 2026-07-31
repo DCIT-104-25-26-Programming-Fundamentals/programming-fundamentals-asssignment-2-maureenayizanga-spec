@@ -37,8 +37,7 @@
 # include <iostream>
 using namespace std;
 
-#include <iostream>
-using namespace std;
+
 
 // Function to check if a number is prime
 bool isPrime(int n) {
