@@ -34,6 +34,36 @@
 // YOUR CODE BELOW — remove the // symbols from the scaffold and fill it in
 // =============================================================================
 
+# include <iostream>
+using namespace std;
+
 #include <iostream>
 using namespace std;
 
+// Function to check if a number is prime
+bool isPrime(int n) {
+    if (n < 2) {
+        return false; // numbers less than 2 are not prime
+    }
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            return false; // found a divisor, so not prime
+        }
+    }
+    return true; // no divisors found, so it is prime
+}
+
+int main() {
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (isPrime(number)) {
+        cout << number << " is a prime number." << endl;
+    } else {
+        cout << number << " is NOT a prime number." << endl;
+    }
+
+    return 0;
+}
