@@ -46,10 +46,10 @@ bool isPrime(int n) {
     }
     for (int i = 2; i * i <= n; i++) {
         if (n % i == 0) {
-            return false; // found a divisor, so not prime
+            return false; 
         }
     }
-    return true; // no divisors found, so it is prime
+    return true; 
 }
 
 int main() {
